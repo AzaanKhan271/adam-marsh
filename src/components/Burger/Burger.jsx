@@ -15,9 +15,9 @@ const Burger = ({ open, setOpen }) => {
         setOpen(!open);
       }}
     >
-      <div />
-      <div />
-      <div />
+      <div style={{transform : open ? "rotate(45deg)" : "rotate(0)" , width : open ? "35px" : "40px"}} />
+      <div style={{opacity: open ? "0" : "1",transform : open ? "translateX(20px)" : "translateX(0)" , width : open ? "40px" : "30px"}} />
+      <div style={{transform : open ? "rotate(-45deg)" : "rotate(0)" , width : open ? "35px" : "20px"}}/>
     </StyledBurger>
   );
 };

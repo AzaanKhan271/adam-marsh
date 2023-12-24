@@ -15,7 +15,6 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-  border : 1px solid #ffffff;
 
   &:focus {
     outline: none;
@@ -26,29 +25,11 @@ export const StyledBurger = styled.button`
   }
 
   div {
-    ${"" /* width: 2rem; */}
     height: 2px;
-    background: ${({ theme, open }) =>
-      open ? "rgb(100, 255, 218)" : "rgb(100, 255, 218)"};
+    background: #ffffff;
     border-radius: 10px;
     transition: all 0.1s linear;
     position: relative;
     transform-origin: 1px;
-
-    :first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-      width: ${({ open }) => (open ? "35px" : "40px")};
-    }
-
-    :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
-      width: ${({ open }) => (open ? "40px" : "30px")};
-    }
-
-    :nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-      width: ${({ open }) => (open ? "35px" : "20px")};
-    }
   }
 `;
