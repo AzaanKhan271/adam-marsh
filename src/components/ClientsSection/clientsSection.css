@@ -1,0 +1,58 @@
+.clientsSecParent {
+    display: flex;
+    flex-direction: column;
+    background: url('https://static.wixstatic.com/media/f3f8a1_25d7568a254743be9303fe835461f53f~mv2.jpg/v1/fill/w_1544,h_697,al_c,q_85,enc_auto/f3f8a1_25d7568a254743be9303fe835461f53f~mv2.jpg');
+    padding: 50px;
+    cursor: pointer;
+}
+
+.clientSecText {
+    width: 400px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.CSImgDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.CSImgDiv img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 900px;
+    height: 200px;
+}
+
+.imgFull {
+    display: flex;
+}
+
+.imgResp {
+    display: none;
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    .clientSecText {
+        width: 80vw;
+    }
+
+    .imgFull {
+        display: none;
+    }
+
+    .imgResp {
+        display: flex;
+    }
+
+    .CSImgDiv img {
+        width: auto;
+        height: auto;
+    }
+}
