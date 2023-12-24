@@ -24,19 +24,14 @@ const Menu = ({ open, setOpen }) => {
           );
         })}
         <li style={{ marginTop: "-5px" }}>
-          <a target="_blank">
-            <Button
-              onClick={() => {
-                setOpen(false);
-                document.body.style.overflow = "auto";
-              }}
-              style={{ color: "#ffffff" }}
-              className="resumeBtn"
-              colorScheme={themeColor}
-              variant="outline"
-            >
-              Ideas + Experiment
-            </Button>
+          <a
+            onClick={() => {
+              setOpen(false);
+              document.body.style.overflow = "auto";
+            }}
+            target="_blank"
+          >
+            Ideas + Experiment
           </a>
         </li>
       </ul>
